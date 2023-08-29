@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230829 15:52:27.305" rpa="false" schemaversion="4">
+<suite id="s1" name="Verity Fill Fields" source="D:\AUT\Verity - Desafio - Robot - Py\Testes\verity_fill_fields.robot">
+<test id="s1-t1" name="Abrir navegador, acessar site da Verity e preencher os campos do formulário" line="15">
+<kw name="Dado que eu acesse o site da Verity">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://www.verity.com.br/</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230829 15:52:27.497" level="INFO">Opening browser 'Chrome' to base url 'https://www.verity.com.br/'.</msg>
+<status status="PASS" starttime="20230829 15:52:27.497" endtime="20230829 15:52:29.156"/>
+</kw>
+<status status="PASS" starttime="20230829 15:52:27.497" endtime="20230829 15:52:29.156"/>
+</kw>
+<kw name="Quando clicar no botão Contato">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:comp-kevyodnk6label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230829 15:52:29.157" level="INFO">Clicking element 'id:comp-kevyodnk6label'.</msg>
+<status status="PASS" starttime="20230829 15:52:29.157" endtime="20230829 15:52:29.361"/>
+</kw>
+<status status="PASS" starttime="20230829 15:52:29.157" endtime="20230829 15:52:29.362"/>
+</kw>
+<kw name="E eu for redirecionado a página do formulário">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230829 15:52:34.364" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230829 15:52:29.362" endtime="20230829 15:52:34.364"/>
+</kw>
+<status status="PASS" starttime="20230829 15:52:29.362" endtime="20230829 15:52:34.364"/>
+</kw>
+<kw name="Então o formulário deve ser preenchido automaticamente">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_NOME}</arg>
+<arg>Usuário de Testes</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 15:52:34.365" level="INFO">Typing text 'Usuário de Testes' into text field 'xpath://*[@id="input_comp-kwz6tqej"]'.</msg>
+<status status="PASS" starttime="20230829 15:52:34.364" endtime="20230829 15:52:34.468"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_EMAIL}</arg>
+<arg>userteste@teste.com.br</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 15:52:34.469" level="INFO">Typing text 'userteste@teste.com.br' into text field 'xpath://*[@id="input_comp-kwz6tqf7"]'.</msg>
+<status status="PASS" starttime="20230829 15:52:34.468" endtime="20230829 15:52:34.551"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_TELEFONE}</arg>
+<arg>11940028922</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 15:52:34.551" level="INFO">Typing text '11940028922' into text field 'xpath://*[@id="input_comp-kwz6tqfe"]'.</msg>
+<status status="PASS" starttime="20230829 15:52:34.551" endtime="20230829 15:52:34.626"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_DESCRITIVO}</arg>
+<arg>Lorem ipsum dolor sit amet. Eum fugiat corporis est veritatis ipsam quo amet harum.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230829 15:52:34.627" level="INFO">Typing text 'Lorem ipsum dolor sit amet. Eum fugiat corporis est veritatis ipsam quo amet harum.' into text field 'xpath://*[@id="textarea_comp-kwz6tqfr"]'.</msg>
+<status status="PASS" starttime="20230829 15:52:34.626" endtime="20230829 15:52:34.769"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230829 15:52:39.769" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230829 15:52:34.769" endtime="20230829 15:52:39.769"/>
+</kw>
+<status status="PASS" starttime="20230829 15:52:34.364" endtime="20230829 15:52:39.769"/>
+</kw>
+<kw name="E o botão &quot;Aceito receber mensagens da Verity&quot; será pressionado">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="comp-kwz6tqgp"]/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230829 15:52:39.770" level="INFO">Clicking element 'xpath://*[@id="comp-kwz6tqgp"]/input'.</msg>
+<status status="PASS" starttime="20230829 15:52:39.769" endtime="20230829 15:52:39.811"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230829 15:52:44.813" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230829 15:52:39.811" endtime="20230829 15:52:44.813"/>
+</kw>
+<status status="PASS" starttime="20230829 15:52:39.769" endtime="20230829 15:52:44.813"/>
+</kw>
+<kw name="E cinco segundos depois o botão &quot;Enviar&quot; deve ser pressionado automaticamente enviando o formulário para a Verity">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="comp-kwz6tqhd"]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230829 15:52:44.814" level="INFO">Clicking element 'xpath://*[@id="comp-kwz6tqhd"]/button'.</msg>
+<status status="PASS" starttime="20230829 15:52:44.813" endtime="20230829 15:52:44.862"/>
+</kw>
+<status status="PASS" starttime="20230829 15:52:44.813" endtime="20230829 15:52:44.863"/>
+</kw>
+<status status="PASS" starttime="20230829 15:52:27.496" endtime="20230829 15:52:44.863"/>
+</test>
+<status status="PASS" starttime="20230829 15:52:27.306" endtime="20230829 15:52:44.864"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Verity Fill Fields">Verity Fill Fields</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
